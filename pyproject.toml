@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "deepseek-agent-lab"
+version = "0.1.0"
+description = "A lightweight ReAct agent framework powered by DeepSeek - zero third-party dependencies, offline demo and full tests included."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Jiaxin Wang" }]
+keywords = ["deepseek", "llm", "agent", "react", "ai-agent", "tool-use"]
+
+[project.scripts]
+deepseek-agent = "deepseek_agent.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
